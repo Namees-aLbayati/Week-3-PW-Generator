@@ -63,7 +63,7 @@ function generatePassword() {
     promptArray = promptArray.concat(specialArray);
   }
 
-  //console log prompt array. should contain all arrays that were selected with prompts.
+  //console log prompt array. should contain all arrays that were selected with form.
 
   console.log(promptArray);
 
