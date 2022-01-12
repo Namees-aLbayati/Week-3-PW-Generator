@@ -40,7 +40,7 @@ function generatePassword() {
 
   if (amountChar < 8 || amountChar > 128) {
   window.alert('Your choice was not between 8-128 characters. Please pick again');
-  return;
+  return "invalid length";
   }
 
   //validating that at least one character type was selected
