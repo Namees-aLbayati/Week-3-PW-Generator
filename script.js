@@ -48,7 +48,7 @@ function generatePassword() {
     alert("You need to pick at least one character type to use. Try again!");
   }
 
-  //check if prompt/confirm results are truthy/falsy, concat array to promptArray if true.
+  //check if checkbox results are truthy/falsy(checked or not), concat array to promptArray if true.
 
   if (upperCase) {
     promptArray = promptArray.concat(upperArray);
