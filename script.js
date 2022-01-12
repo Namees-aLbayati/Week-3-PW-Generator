@@ -39,7 +39,8 @@ function generatePassword() {
   console.log(lowerCase);
 
   if (amountChar < 8 || amountChar > 128) {
-    amountChar = prompt('Your choice was not between 8-128 characters. Please pick again');
+  window.alert('Your choice was not between 8-128 characters. Please pick again');
+  return;
   }
 
   //validating that at least one character type was selected
