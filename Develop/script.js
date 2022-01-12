@@ -28,13 +28,21 @@ function generatePassword() {
 
   //prompt user for various pw criteria and save answer to variable
 
-  var upperCase = confirm('Do you want to use uppercase letters in your password?');
-  var lowerCase = confirm('Do you want to use lowercase letters in your password?');
-  var specials = confirm('Do you want to use special characters in your password?');
-  var numbers = confirm('Do you want to use numbers in your password?');
-  var amountChar = prompt('Type how many characters you want in your password (8-128)');
+  // var upperCase = confirm('Do you want to use uppercase letters in your password?');
+  // var lowerCase = confirm('Do you want to use lowercase letters in your password?');
+  // var specials = confirm('Do you want to use special characters in your password?');
+  // var numbers = confirm('Do you want to use numbers in your password?');
+  // var amountChar = prompt('Type how many characters you want in your password (8-128)');
 
-  //validating length chosen in amountChar is between 8-128
+  var upperCase = document.querySelector('#uppercase').checked;
+  var lowerCase = document.querySelector('#lowercase').checked;
+  var numbers = document.querySelector('#numbers').checked;
+  var specials = document.querySelector('#specials').checked;
+  var amountChar = document.querySelector('#length').value;
+
+  //validating length chosen in amountChar is between 8-128, prompt user again if not.
+  console.log(upperCase);
+  console.log(lowerCase);
 
   if (amountChar < 8 || amountChar > 128) {
     amountChar = prompt('Your choice was not between 8-128 characters. Please pick again');
@@ -71,6 +79,7 @@ function generatePassword() {
   };
 
   //use array.join method to convert array to string and return it
-
+    console.log(pwArray);
   return pwArray.join("");
 }
+

@@ -12,10 +12,25 @@
       <header>
         <h1>Password Generator</h1>
       </header>
+      <section class='pwform'>
+        <form action="POST">
+          <label for="uppercase">Include uppercase letters?</label>
+          <input type='checkbox' name="uppercase" id="uppercase">
+          <br>
+          <label for="lowercase">Include lowercase letters?</label>
+          <input type='checkbox' name="lowercase" id="lowercase">
+          <br>
+          <label for="numbers">Include numbers?</label>
+          <input type='checkbox' name="numbers" id="numbers">
+          <br>
+          <label for="specials">Include special characters?</label>
+          <input type='checkbox' name="specials" id="specials">
+          <br>
+          <label for="length">Password Length (8-128 chars)</label>
+          <input type="number" name="length" id="length" minlength="8" maxlength="128">
+        </form>
+      </section>
       <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
         <div class="card-body">
           <textarea
             readonly
