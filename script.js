@@ -26,13 +26,7 @@ function generatePassword() {
   var upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   var specialArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
 
-  //prompt user for various pw criteria and save answer to variable
-
-  // var upperCase = confirm('Do you want to use uppercase letters in your password?');
-  // var lowerCase = confirm('Do you want to use lowercase letters in your password?');
-  // var specials = confirm('Do you want to use special characters in your password?');
-  // var numbers = confirm('Do you want to use numbers in your password?');
-  // var amountChar = prompt('Type how many characters you want in your password (8-128)');
+//get form input data and save to variable. checked returns true or false.
 
   var upperCase = document.querySelector('#uppercase').checked;
   var lowerCase = document.querySelector('#lowercase').checked;
